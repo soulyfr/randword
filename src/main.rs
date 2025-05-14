@@ -125,7 +125,6 @@ async fn main() {
                         print!("{} ", returnedword)
                     } else {
                         if words.len() > 1 {
-                            // print!("{}", pivot -returnedword.len() + 3);
                             print!("{}{}", returnedword, " ".repeat(pivot - returnedword.len() + 1));
                         }
                         else {
@@ -143,16 +142,11 @@ async fn main() {
                     println!();
                 }
             }
-            // if let Some(word) = words.get(0) {
-            //     println!("word: {}", word);
-            // }
             
-            // dogs_data = data.data
         }
         Err(err) => {
             eprintln!("couldnt fetch data, sorry :P - {}", err)
         }
     }
-    // println!("sup {}", args.name);
     
 }
